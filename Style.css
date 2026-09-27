@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #0b0b0f;
+    color: #c8a2ff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 18px; /* Increases default base text size */
+}
+
+header {
+   margin-top: 20px;
+   position: fixed;
+   top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: #040505;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+    transition:0.5s ease;
+}
+
+.logo:hover{
+    transform:scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+nav a:hover {
+    color: #db7979;
+    border-bottom: 2px solid #d06f6f;
+}
+@media(max-width:995px){
+    nav{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 40%;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-bottom-left-radius: 2rem;
+    }
+}
+
+nav.active{
+    display:block;
+}gap
+
+nav a{
+    display:block;
+    font-size:2rem;
+    margin: 3rem 0;
+}
+
+nav a:hover,
+nav a:hover{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #d06f6f;
+
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem 9%;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color:#020404   
+
+}
+
+.home.home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+}
+
+span{
+    color: #db7979;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight:700
+    
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width:32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px screen;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* Journal sttyles
+*/
+
+body {
+    margin: 0;
+    background-color: #0b0b0f;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.journal-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 120px auto 60px;
+    color: white;
+}
+
+.journal-container h1 {
+    font-size: 45px;
+    color: #c8a2ff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.journal-intro {
+    text-align: center;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+.journal-box {
+    background-color: #17171f;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(200, 162, 255, 0.15);
+}
+
+.journal-box input,
+.journal-box select,
+.journal-box textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #252530;
+    color: white;
+    font-size: 16px;
+}
+
+.journal-box input::placeholder,
+.journal-box textarea::placeholder {
+    color: #999;
+}
+
+.journal-box textarea {
+    height: 250px;
+    resize: vertical;
+}
+
+.journal-box input:focus,
+.journal-box select:focus,
+.journal-box textarea:focus {
+    outline: 2px solid #c8a2ff;
+}
+
+.journal-box button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #c8a2ff;
+    color: #111;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.journal-box button:hover {
+    background-color: #b589ed;
+}
+
+.journal-container h2 {
+    margin-top: 50px;
+    color: white;
+}
+
+.journal-entry {
+    background-color: #17171f;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border-left: 4px solid #c8a2ff;
+}
+
+.journal-entry h3 {
+    color: #c8a2ff;
+    margin-bottom: 5px;
+}
+
+.entry-date {
+    color: #888;
+    font-size: 13px;
+}
+
+.entry-mood {
+    color: #ddd;
+    font-weight: bold;
+}
+
+.journal-entry button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* info style*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0b0b0f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0b0b0f;
+    border-bottom: 1px solid #1a1a24;
+    z-index: 1000;
+}
+
+header .logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover {
+    color: #c8a2ff;
+}
+
+
+main {
+    width: 80%;
+    max-width: 900px;
+    margin: 120px auto 60px;
+}
+
+.title h1 {
+    font-size: 45px;
+    color: #c8a2ff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.intro {
+    text-align: center;
+    color: #cccccc;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+
+.feelings-card {
+    background-color: #17171f;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px transparent(200, 162, 255, 0.15);
+}
+
+.feelings-title {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+
+.feeling {
+    background-color: #252530;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.feeling:last-child {
+    margin-bottom: 0;
+}
+
+.feeling-content h3 {
+    color: #c8a2ff;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.feeling-content p {
+    color: #dddddd;
+    font-size: 15px;
+}

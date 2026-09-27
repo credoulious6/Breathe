@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal - Breathe</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="homePage.html" class="logo">Breathe</a>
+
+        <nav>
+            <a href="homePage.html">Home</a>
+            <a href="info.html">Information</a>
+            <a href="journal.html">Journal</a>
+        </nav>
+    </header>
+
+    <main class="journal-container">
+
+        <h1>My Journal</h1>
+        <p class="journal-intro">
+            Take a moment to write down what's on your mind.
+        </p>
+
+        <div class="journal-box">
+
+            <input
+                type="text"
+                id="journalTitle"
+                placeholder="Journal title..."
+            >
+
+            <select id="journalMood">
+                <option value="">How are you feeling?</option>
+                <option value="😊 Happy">😊 Happy</option>
+                <option value="😌 Calm">😌 Calm</option>
+                <option value="😐 Okay">😐 Okay</option>
+                <option value="😔 Sad">😔 Sad</option>
+                <option value="😰 Anxious">😰 Anxious</option>
+                <option value="😡 Angry">😡 Angry</option>
+            </select>
+
+            <textarea
+                id="journalText"
+                placeholder="Write what's on your mind..."
+            ></textarea>
+
+            <button onclick="saveEntry()">Save Entry</button>
+
+        </div>
+
+        <h2>Previous Entries</h2>
+
+        <div id="entries"></div>
+
+    </main>
+
+    <script src="journal.js"></script>
+
+</body>
+</html>
